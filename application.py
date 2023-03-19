@@ -242,7 +242,7 @@ def main():
     color_model = KNeighborsClassifier(n_neighbors=7)
     color_model.fit(X_feature.values, target)
 
-    ser = serial.Serial(port='COM9', baudrate=115200, timeout=1000)
+    ser = 1#serial.Serial(port='COM9', baudrate=115200, timeout=1000)
 
     # Create an instance of TKinter Window or frame
     win = tk.Tk()
